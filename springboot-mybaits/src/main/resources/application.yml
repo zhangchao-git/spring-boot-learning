@@ -1,10 +1,14 @@
+logging:
+  level:
+     cn.zoua: debug
+
 spring:
   datasource:
 #   数据源基本配置
     username: root
-    password: 123456
+    password: 2358mo
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.15.22:3306/mybatis
+    url: jdbc:mysql://47.98.37.85:3306/springboot
     type: com.alibaba.druid.pool.DruidDataSource
 #   数据源其他配置
     initialSize: 5
@@ -32,3 +36,4 @@ mybatis:
 #    schema:
 #      - classpath:sql/department.sql
 #      - classpath:sql/employee.sql
+
