@@ -4,11 +4,15 @@ import cn.zoua.allinone.bean.Employee;
 import cn.zoua.allinone.mapper.EmployeeMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.*;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 @CacheConfig(cacheNames = "emp"/*,cacheManager = "employeeCacheManager"*/) //抽取缓存的公共配置
 @Service
 public class EmployeeService {
+
+    @Autowired
+    RedisTemplate redisTemplate;
 
     @Autowired
     EmployeeMapper employeeMapper;
