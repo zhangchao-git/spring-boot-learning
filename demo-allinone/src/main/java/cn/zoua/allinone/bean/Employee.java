@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.data.elasticsearch.annotations.Document;
 
 import java.io.Serializable;
 
@@ -12,6 +13,7 @@ import java.io.Serializable;
 @Setter
 @ToString
 @ApiModel
+@Document(indexName = "zoua",type = "employee")
 public class Employee implements Serializable {
 
     @ApiModelProperty(value="ID",dataType="Integer",name="ID",example="1")

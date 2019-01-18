@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * springboot整合
- * mybatis、cache、thymeleaf、web、devtools、lombok、swagger、amqp、actuator、elasticsearch、redis、security
+ * mybatis、cache、thymeleaf、web、devtools、lombok、swagger、amqp、actuator、elasticsearch、redis、mail、security
  */
 @EnableRabbit
 @EnableCaching
