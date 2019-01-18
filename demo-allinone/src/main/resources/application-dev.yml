@@ -36,6 +36,12 @@ spring:
     #配置redis
   redis:
     host: 47.98.37.85
+    #配置rabbitmq
+  rabbitmq:
+    host: 47.98.37.85
+    username: guest
+    password: guest
+
 mybatis:
   # 指定全局配置文件位置
   config-location: classpath:mybatis/mybatis-config.xml

@@ -2,6 +2,7 @@ package cn.zoua.allinone.controller;
 
 import cn.zoua.allinone.bean.Department;
 import cn.zoua.allinone.service.DeptService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Api(tags="部门API")
 public class DeptController {
 
     @Autowired
