@@ -7,7 +7,7 @@ import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * springboot整合
- * mybatis、cache、amqp、actuator、elasticsearch、redis、security、thymeleaf、web、devtools、lombok
+ * mybatis、cache、thymeleaf、web、devtools、lombok、swagger、amqp、actuator、elasticsearch、redis、security
  */
 @EnableCaching
 @MapperScan(value = "cn.zoua.allinone.mapper")

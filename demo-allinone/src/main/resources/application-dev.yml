@@ -4,6 +4,9 @@ logging:
 
 debug: true
 
+swagger:
+  enabled: true
+
 spring:
   datasource:
     # 数据源基本配置

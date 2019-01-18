@@ -13,6 +13,12 @@ public class DeptController {
     @Autowired
     DeptService deptService;
 
+    /**
+     * 根据部门id获取部门信息
+     *
+     * @param id
+     * @return
+     */
     @GetMapping("/dept/{id}")
     public Department getDept(@PathVariable("id") Integer id) {
         return deptService.getDeptById(id);
