@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.zoua</groupId>
-    <artifactId>springboot-01</artifactId>
+    <artifactId>springboot-00-base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-01</name>
+    <name>springboot-00-base</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
