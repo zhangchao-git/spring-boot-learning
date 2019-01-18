@@ -2,6 +2,8 @@ package cn.zoua.allinone.controller;
 
 import cn.zoua.allinone.bean.Department;
 import cn.zoua.allinone.service.DeptService;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +22,8 @@ public class DeptController {
      * @return
      */
     @GetMapping("/dept/{id}")
+    @ApiOperation(value="查询部门(ID)")
+    @ApiImplicitParam(name="id",value="部门ID",required=true)
     public Department getDept(@PathVariable("id") Integer id) {
         return deptService.getDeptById(id);
     }

@@ -2,7 +2,7 @@ package cn.zoua.allinone.config;
 
 
 /**
- * 使用json保存缓存数据
+ * 默认使用jdk序列化保存数据，在这里配置使用json保存缓存数据
  */
 //@Configuration
 public class MyRedisConfig {
